@@ -6,5 +6,3 @@ export async function removeFile(path) {
         console.log(`Ошибка удаления файла`, e.message)
     }
 }
-
-console.log("test")
