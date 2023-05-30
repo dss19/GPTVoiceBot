@@ -16,9 +16,9 @@ bot.use(session())
 bot.command('new', async (context) => {
     try {
         context.session = INITIAL_SESSION
-        await context.reply('Жду вашего голосового или текстового сообщения (:')
+        await context.reply('Начинаем новый диалог, жду вашего голосового или текстового сообщения (:')
     } catch (e) {
-        console.log(`Ошибка сессии:`, e.message)
+        console.log(`Ошибка новой сессии:`, e.message)
     }
 })
 
